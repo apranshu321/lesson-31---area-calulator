@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perimeter Calculator</title>
+</head>
+<body>
+    <h1>Perimeter Calculator</h1>
+    <script>
+        var a = prompt("Welcome to Perimeter Calculator. \n Please Enter your Choice. \n1.Perimeter of Rectangle. \n2.Perimeter of Circle. \n3.Perimeter of Square. \n4.Perimeter of Parallelogram")
+        if(a == 1){
+            var b = prompt("Enter width: ")
+            var l = prompt("Enter the length: ")
+            var result = 2*Number(b)+Number(l)*2
+            alert(result)
+        }
+        if(a == 2){
+            var r = prompt("Enter radius: ")
+            var result = 3.14 * Number(r)*2
+            alert(result)
+        }
+        if(a == 3){
+            var h = prompt("Enter height or base: ")
+            var result = Number(h)*4
+            alert(result)
+        }
+
+        if(a == 4){
+            var b = prompt("Enter base: ")
+            var h = prompt("Enter the slanting line: ")
+            var result = Number(b)*2+Number(h)*2
+            alert(result)
+        }
+    </script>
+</body>
+</html>
